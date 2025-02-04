@@ -1,0 +1,215 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+body {
+    background-color: #f2f2f2; /* Grigio chiaro */
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd; /* Grigio tenue */
+    color: #444;
+    padding: 15px;
+    border-bottom: 2px solid #bbb; /* Bordo grigio medio */
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+header h2:hover {
+    animation: text-header 0.5s ease-in-out;
+    transform: scale(1.1);
+    color: #6c757d; /* Grigio scuro */
+}
+
+.user{
+    scale: 0.8;
+    border: 2px solid black;
+}
+
+/* Prenota Section */
+.prenota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #eaeaea; /* Grigio chiaro */
+    color: #333;
+    padding: 20px;
+}
+
+.sala, .cucina, .studio, .bagno1, .bagno2 {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    display: flex;
+}
+
+.sala {
+    background-color: #b0bec5; /* Grigio blu */
+}
+#btnX{
+    background-color: green;
+    display: none;
+}
+.cucina {
+    background-color: #dce775; /* Verde chiaro */
+}
+
+.studio {
+    background-color: #90a4ae; /* Grigio azzurro */
+}
+
+.bagno1 {
+    background-color: #ffe082; /* Giallo pastello */
+}
+
+.bagno2 {
+    background-color: #a5d6a7; /* Verde menta */
+}
+
+.sala:hover, .cucina:hover, .studio:hover, .bagno1:hover, .bagno2:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cibo Section */
+.cibo {
+    background-color: #f8f9fa; /* Bianco sporco */
+    padding: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pranzo, .cena, .spesa{
+    background: #ffffff; /* Bianco */
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pranzo:hover, .cena:hover, .spesa:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pranzo input, .cena input, .spesa input{
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.pranzo input:hover, .cena input:hover, .spesa input:hover{
+    background: #fff;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6c757d; /* Grigio scuro */
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #495057; /* Grigio ancora più scuro */
+    transform: scale(1.05);
+}
+
+.like {
+    background-color: #81c784; /* Verde chiaro */
+    color: white;
+}
+
+.dislike {
+    background-color: #e57373; /* Rosso chiaro */
+    color: white;
+}
+
+/* Favori Section */
+.favori {
+    background-color: #f8f9fa; /* Bianco sporco */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #bbb; /* Bordo grigio medio */
+    display: flex;
+    justify-content: space-around;
+}
+
+.favori h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn button {
+    background-color: #6c757d; /* Grigio scuro */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #495057;
+    transform: scale(1.05);
+}
+
+.left-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.favori h2{
+    padding: 5px;
+    height:30px;
+    margin-bottom: 15px;
+}
+
+.red{
+    background-color: #e57373;
+}

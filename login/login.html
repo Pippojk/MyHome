@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login_style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form action="loginB.php" method="post">
+                <!-- Campo Nome -->
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+                </div>
+                <!-- Campo Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+                </div>
+                <!-- Bottone Login -->
+                <button type="submit" class="login-button">Accedi</button>
+            </form>
+            <p class="signup-link">Non hai un account? <a href="signUp.html">Registrati</a></p>
+        </div>
+    </div>
+</body>
+</html>
