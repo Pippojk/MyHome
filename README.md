@@ -1,2 +1,9 @@
 # myHome
-My Home is an idea that i started developing some month ago, initally it was a simple project to remember php couse i was goinmg to doit at school, in fact this is the php version, which i use in my home with xampp, i started developing an app in react native of myHome since i thinked that would be better than a website, it's my first app and i'm using react native couse i already know react.
+myHome is a personal project that I started developing a few months ago. Initially, it was a simple project designed to refresh my knowledge of PHP, as I was studying it at school. This repository contains the PHP version, which I currently use locally at home. On myHome, you can reserve rooms in your house, add items to the shopping list, ask for favors, and do many other things..
+
+# Technologies Used
+Web version: PHP (running on XAMPP)
+DataBase: mySql
+Server: xampp
+# Purpose
+This project serves as both a personal home management tool and a learning exercise, helping me improve my skills in web development.
